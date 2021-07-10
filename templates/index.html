@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>32153236 이세현</title>
+{% endblock %}
+
+{% block body %}
+<!--<h1>Template</h1> -->
+<h1><ins>오픈소스SW활용 기말</ins></h1>
+<h2>32153236 이세현</h2>
+<hr>
+
+<header>
+    <h3>소개</h3>
+</header>
+<p>단국대학교 응용컴퓨터공학과 32153236 이세현</p>
+<p>현재 단국대학교 4학년 재학중이며 코로나로 인해 방콕중입니다..</p>
+<hr>
+
+<header>
+    <h3>취미</h3>
+</header>
+<p>제 취미중 하나는 피아노 치기 입니다.</p>
+<!--/piano 페이지로 이동 -->
+<a href={{ url_for('piano') }}>나의 취미 피아노 소개</a>
+<br>
+
+<p>또 다른 취미는 게임제작입니다.</p>
+<!--/game 페이지로 이동-->
+<a href={{ url_for('game') }}>나의 취미 게임제작 소개</a>
+<hr>
+
+<header>
+    <h3>내 전공과 미래</h3>
+</header>
+<p>처음에 컴퓨터공학과라는 제 전공에 큰 흥미는 없었습니다</p>
+<p>1학년때는 정말 많이 놀기만했던 기억이 나네요.</p>
+<p>그런데 재대후 본격적으로 공부를 시작하고 백준같은 사이트에서 알고리즘 문제도 풀어보고</p>
+<p>게임제작도 해보면서 프로그래밍이란것에 흥미를 갖게되었습니다.</p>
+<p>지금은 전공을 선택하길 정말 잘했다는 생각이 들고 졸업하면 개발자로 취직해</p>
+<p>계속 발전하는 개발자가 되고 싶습니다.</p>
+<br>
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0PPjA%2Fbtq64LWS4K0%2FmmmyFclum0lTeoOqRDLNgK%2Fimg.png" width="500" height="300">
+<br>
+<hr>
+<br>
+
+<header>
+    <h3>반려동물들</h3>
+</header>
+<p>우리 집에는 두마리의 강아지와 한마리의 고양이가 살고있습니다</p>
+<p>같이 살고있는 반려동물들을 소개합니다</p>
+
+<!--/pets 페이지로 이동-->
+<a href={{ url_for('pets') }}>반려동물들 소개</a>
+<br>
+<hr>
+
+
+
+{% endblock %}
